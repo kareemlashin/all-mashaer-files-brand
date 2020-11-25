@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/library/bootstrap.css">
+    <link rel="stylesheet" href="css/library/aos.css">
+    <link rel="stylesheet" href="css/library/Chart.min.css">
+    <link rel="stylesheet" href="css/library/all.min.css">
+
+    <!--main style-->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+
+    <title>مشاعر</title>
+</head>
+
+<body>
+
+    <!--loading screen-->
+    <div class="loading">
+        <div class="loadingspinner"></div>
+
+    </div>
+    <!--end loading screen-->
+    <div class="clearfix">
+        <aside>
+
+            <div class="logo my-2 text-center position-relative">
+                <img src="img/لوجو مشاعر2-0١.png" height="70px" alt="" srcset="">
+                <i class="fas fa-times" id="close"></i>
+            </div>
+            <div class="scrollbar" id="style-4">
+                <div class="force-overflow">
+                    <ul>
+                        <!-- active item-->
+                        <li class="active-nav">
+                            <a href="index.html"> <i class="fas fa-home"></i> طلبات القبول</a>
+                        </li>
+                        <li>
+                            <a href="vipClient.html"> <i class="fas fa-star"></i> العملاء المميزين</a>
+                        </li>
+                        <li>
+                            <a href="freePage.html"> <i class="far fa-file-alt"></i>نسخة تجريبية</a>
+                        </li>
+
+                        <li>
+                            <a href="map.html"> <i class="far fa-chart-bar"></i>احصائيات عامة</a>
+                        </li>
+
+                        <li>
+                            <a href="blockClient.html"> <i class="fas fa-ban"></i> المحظورون</a>
+                        </li>
+                        <li>
+                            <a href="tips.html"> <i class="fas fa-list"></i> التعليمات</a>
+                        </li>
+                        <li><a href="uploadfile.html"><i class="fas fa-cloud-upload-alt"></i> تحميل الملف</a> </li>
+                        <li>
+                            <a href="twitter.html"> <i class="fas fa-search"></i> بحث تويتر </a>
+                        </li>
+                        <li>
+                            <a href="analysis-data.html"> <i class="far fa-chart-bar"></i> تحليل البيانات</a>
+                        </li>
+                        <li>
+                            <a href="loadingResult.html"> <i class="far fa-list-alt"></i>تحميل النتائج</a>
+                        </li>
+                        <li>
+                            <a href="conact_us.html"> <i class="fas fa-phone"></i>اتصل بنا</a>
+                        </li>
+                        <li>
+                            <a href="register.html"> <i class="far fa-list-alt"></i> تسجيل جديد</a>
+                        </li>
+                        <li>
+                            <a href="login.html"> <i class="fas fa-phone"></i> تسجيل دخول</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <nav class=" bg-one py-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fas fa-bars" id="big-bar"></i>
+                            <i class="fas fa-bars" id="small-bar"></i>
+                        </div>
+                        <div class="col-9 pl-0">
+
+                            <div class=" mr-auto text-left top-menu pt-2 ">
+                                <ul class=" mr-auto text-left">
+
+                                    <li class="mr-auto text-left mx-2 border-left pl-2">
+                                        <a class="" href="tips.html"><i class="fas fa-list px-1"></i>التعليمات</a>
+                                    </li>
+                                    <li class="mr-auto text-left border-left pl-2">
+                                        <a class="" href="conact_us.html"> <i class="fas fa-phone px-1"></i> اتصل بنا</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-2 pr-0">
+
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>اسم المستخدم </span>
+                                    <i class="fas fa-chevron-down"></i>
+
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">تسجيل خروج <i class="fas fa-sign-out-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </nav>
+
+
+            <div class="strap-top ">
+                <div class="d-flex align-items-center mx-3 h-75">
+                    <div class="w-100">
+                        <span class="mx-1 color-base">
+                            <i class="far fa-folder ml-2"></i>
+                            <span class="f-19">
+                                 جميع الملفات 
+
+                            </span>
+                        </span>
+
+                        <div class="w-100">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-3 main-all  shadow radius-20 ">
+                <div class="pt-2 fix-table table-responsive ">
+                    <table class="">
+                        <thead class="text-center bg-white py-3">
+
+                            <tr class="  text-center ">
+                                <th class="py-2">اسم الملف</th>
+                                <th class="py-2"> الوصف</th>
+                                <th class="py-2">الحساب</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+
+
+                        <tr class="py-3">
+
+
+                            <td class="max-w text-truncate py-2"> اسم الملف</td>
+                            <td>
+                                وصف الملف هنا وخصائصه وصف الملف هنا وخصائصه
+                            </td>
+                            <td class="max-w text-truncate py-2"> 100 <sup class="color-1 f-15">SAR </sup> </td>
+
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="delete-file f-25 mx-auto disabled-btn" type="submit" name="" formmethod="">
+                                        <i class="far fa-trash-alt "></i>
+                                    </button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="open-file f-25 mx-auto disabled-btn" type="submit" name="" formmethod="">
+                                        <i class="far fa-folder-open "></i>
+                                    </button>
+                                    </form>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr class="py-3">
+
+
+                            <td class="max-w text-truncate py-2"> اسم الملف</td>
+                            <td>
+                                وصف الملف هنا وخصائصه وصف الملف هنا وخصائصه
+                            </td>
+                            <td class="max-w text-truncate py-2"> 100 <sup class="color-1 f-15">SAR </sup> </td>
+
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="delete-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-trash-alt "></i>
+                                    </button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="open-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-folder-open "></i>
+                                    </button>
+                                    </form>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr class="py-3">
+
+
+                            <td class="max-w text-truncate py-2"> اسم الملف</td>
+                            <td>
+                                وصف الملف هنا وخصائصه وصف الملف هنا وخصائصه
+                            </td>
+                            <td class="max-w text-truncate py-2"> 100 <sup class="color-1 f-15">SAR </sup> </td>
+
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="delete-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-trash-alt "></i>
+                                    </button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="open-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-folder-open "></i>
+                                    </button>
+                                    </form>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr class="py-3">
+
+
+                            <td class="max-w text-truncate py-2"> اسم الملف</td>
+                            <td>
+                                وصف الملف هنا وخصائصه وصف الملف هنا وخصائصه
+                            </td>
+                            <td class="max-w text-truncate py-2"> 100 <sup class="color-1 f-15">SAR </sup> </td>
+
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="delete-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-trash-alt "></i>
+                                    </button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="open-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-folder-open "></i>
+                                    </button>
+                                    </form>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr class="py-3">
+
+
+                            <td class="max-w text-truncate py-2"> اسم الملف</td>
+                            <td>
+                                وصف الملف هنا وخصائصه وصف الملف هنا وخصائصه
+                            </td>
+                            <td class="max-w text-truncate py-2"> 100 <sup class="color-1 f-15">SAR </sup> </td>
+
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="delete-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-trash-alt "></i>
+                                    </button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="open-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-folder-open "></i>
+                                    </button>
+                                    </form>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr class="py-3">
+
+
+                            <td class="max-w text-truncate py-2"> اسم الملف</td>
+                            <td>
+                                وصف الملف هنا وخصائصه وصف الملف هنا وخصائصه
+                            </td>
+                            <td class="max-w text-truncate py-2"> 100 <sup class="color-1 f-15">SAR </sup> </td>
+
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="delete-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-trash-alt "></i>
+                                    </button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="open-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-folder-open "></i>
+                                    </button>
+                                    </form>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr class="py-3">
+
+
+                            <td class="max-w text-truncate py-2"> اسم الملف</td>
+                            <td>
+                                وصف الملف هنا وخصائصه وصف الملف هنا وخصائصه
+                            </td>
+                            <td class="max-w text-truncate py-2"> 100 <sup class="color-1 f-15">SAR </sup> </td>
+
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="delete-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-trash-alt "></i>
+                                    </button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="open-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-folder-open "></i>
+                                    </button>
+                                    </form>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+                        <tr class="py-3">
+
+
+                            <td class="max-w text-truncate py-2"> اسم الملف</td>
+                            <td>
+                                وصف الملف هنا وخصائصه وصف الملف هنا وخصائصه
+                            </td>
+                            <td class="max-w text-truncate py-2"> 100 <sup class="color-1 f-15">SAR </sup> </td>
+
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="delete-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-trash-alt "></i>
+                                    </button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td class=" text-truncate py-2 text-center ">
+                                <div class="d-flex justify-content-center">
+
+                                    <form action="" method="" name="">
+                                        <button class="open-file f-25 mx-auto" type="submit" name="" formmethod="">
+                                        <i class="far fa-folder-open "></i>
+                                    </button>
+                                    </form>
+                                </div>
+
+                            </td>
+                        </tr>
+
+
+
+
+                    </table>
+
+
+                </div>
+
+
+            </div>
+
+
+        </main>
+    </div>
+
+    <script src="js/jquery-3-4-1-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

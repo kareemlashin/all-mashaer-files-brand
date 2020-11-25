@@ -1,0 +1,152 @@
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+#legend {
+    position: absolute;
+    top: 3px;
+    left: 780px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 100;
+    font-size: 1em;
+    font-family: sans-serif;
+    width: 165px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.legendheading {
+    position: relative;
+    height: 25px;
+    padding: 5px 2px 0px 2px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.legenditem {
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+
+/*Marker clusters*/
+
+.marker-cluster-pie g.arc {
+    fill-opacity: 0.5;
+}
+
+.marker-cluster-pie-label {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+/*Markers*/
+
+.marker {
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-style: solid;
+    fill: #CCC;
+    stroke: #444;
+    background: #CCC;
+    border-color: #444;
+}
+
+.marker div {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+/*marker categories*/
+
+.category-1 {
+    fill: #E74F5B;
+    stroke: #E74F5B;
+    background: #E74F5B;
+    border-color: #E74F5B;
+}
+
+.category-2 {
+    fill: #FFA70B;
+    stroke: #FFA70B;
+    background: #FFA70B;
+    border-color: #FFA70B;
+}
+
+.category-3 {
+    fill: #FFA70B;
+    stroke: #FFA70B;
+    background: #FFA70B;
+    border-color: #FFA70B;
+}
+
+.category-4 {
+    fill: #27AA74;
+    stroke: #27AA74;
+    background: #27AA74;
+    border-color: #27AA74;
+}
+
+.category-5 {
+    fill: #27AA74;
+    stroke: #27AA74;
+    background: #27AA74;
+    border-color: #27AA74;
+}
+
+.category-6 {
+    fill: #CCC;
+    stroke: #444;
+    background: #CCC;
+    border-color: #444;
+}
+
+
+/*marker icons*/
+
+
+/*Popup*/
+
+.map-popup span.heading {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.map-popup span.attribute {
+    display: block;
+}
+
+.map-popup span.label {
+    font-weight: bold;
+}
+
+.leaflet-container .leaflet-control-attribution {
+    display: none;
+}
+
+#legend {
+    position: absolute;
+    top: 3px;
+    left: 780px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 100;
+    font-size: 1em;
+    font-family: sans-serif;
+    width: 165px;
+    background: #fff9;
+    display: none;
+}
